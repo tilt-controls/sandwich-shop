@@ -24,12 +24,12 @@ public class POSCalculatorApp {
         // Conditional statements for discounts based on age,
         // Formats price to 2 decimal places before printing
         if (age <= 17) {
-            sandwichPrice = (-sandwichPrice * .1) + sandwichPrice;
+            sandwichPrice *= .9;
             String formattedPrice = String.format("%.2f", sandwichPrice);
             System.out.println("Your total for a " + sandwichSize + " is " + formattedPrice);
 
         } else if (age >= 65) {
-            sandwichPrice = (-sandwichPrice * .2) + sandwichPrice;
+            sandwichPrice *= .8;
             String formattedPrice = String.format("%.2f", sandwichPrice);
             System.out.println("Your total for a " + sandwichSize + " is " + formattedPrice);
 
