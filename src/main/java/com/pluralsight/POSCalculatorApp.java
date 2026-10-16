@@ -21,20 +21,20 @@ public class POSCalculatorApp {
         System.out.println("Enter age: ");
         age = scanner.nextInt();
 
-        // Conditional statements for discounts based on age,
+        // Discount based on age,
         // Formats price to 2 decimal places before printing
         if (age <= 17) {
             sandwichPrice *= .9;
             String formattedPrice = String.format("%.2f", sandwichPrice);
-            System.out.println("Your total for a " + sandwichSize + " is " + formattedPrice);
+            System.out.println("Your total for a " + sandwichSize + " sandwich is " + formattedPrice); // 17 or under discount
 
         } else if (age >= 65) {
             sandwichPrice *= .8;
             String formattedPrice = String.format("%.2f", sandwichPrice);
-            System.out.println("Your total for a " + sandwichSize + " is " + formattedPrice);
+            System.out.println("Your total for a " + sandwichSize + " sandwich is " + formattedPrice); // Over 65 discount
 
         } else {
-            System.out.println("Your total for a " + sandwichSize + " is " + sandwichPrice);
+            System.out.println("Your total for a " + sandwichSize + " sandwich is " + sandwichPrice); // No discount
         }
 
 
